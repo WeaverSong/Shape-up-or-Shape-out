@@ -1,0 +1,66 @@
+body {
+    background-color: lightgray;
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+#inputs {
+    background-color: gray;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.input {
+    background-color: white;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    box-shadow: 3px 3px black;
+    text-align: left;
+}
+
+.input-group {
+    padding: 2px;
+}
+
+#shapes {
+    background-color: white;
+    width: 600px;
+    height: 600px;
+    display: inline-block;
+    margin: 20px;
+    border: 3px solid black;
+    border-radius: 10px;
+    vertical-align: top;
+    position: relative;
+}
+
+#shape-data {
+    background-color: white;
+    width: 300px;
+    height: 600px;
+    display: inline-block;
+    margin: 20px;
+    border: 3px solid black;
+    border-radius: 10px;
+    vertical-align: top;
+}
+
+
+.shape {
+    position: absolute;
+}
+
+.Circle {
+    border-radius: 50%;
+}
+
+.Triangle {
+    border-bottom: 100px solid red;
+    border-right: 100px solid transparent;
+}

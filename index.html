@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shape up or Shape out</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="inputs">
+        <form class="input" id="square">
+            <h4>Square</h4>
+            <div class="input-group">
+                <label for="square-length">Side length</label>
+                <input type="number" id="square-length">
+            </div>
+            <div class="input-group">
+                <input type="button" value="Insert" id="square-insert">
+            </div>
+        </form>
+        <form class="input" id="rectangle">
+            <h4>Rectangle</h4>
+            <div class="input-group">
+                <label for="rect-width">Width</label>
+                <input type="number" id="rect-width">
+            </div>
+            <div class="input-group">
+                <label for="rect-height">Height</label>
+                <input type="number" id="rect-height">
+            </div>
+            <div class="input-group">
+                <input type="button" value="Insert" id="rect-insert">
+            </div>
+        </form>
+        <form class="input" id="circle">
+            <h4>Circle</h4>
+            <div class="input-group">
+                <label for="circle-radius">Radius </label>
+                <input type="number" id="circle-radius">
+            </div>
+            <div class="input-group">
+                <input type="button" value="Insert" id="circle-insert">
+            </div>
+        </form>
+        <form class="input" id="triangle">
+            <h4>Triangle</h4>
+            <div class="input-group">
+                <label for="tri-height">Height</label>
+                <input type="number" id="tri-height">
+            </div>
+            <div class="input-group">
+                <input type="button" value="Insert" id="tri-insert">
+            </div>
+        </form>
+    </div>
+    <div id="shape-container">
+        <div id="shapes"></div>
+        <div id="shape-data">
+            <h2 id="shape-name">Name</h2>
+            <p id="shape-width">Width: </p>
+            <p id="shape-height">Height: </p>
+            <p id="shape-radius">Radius: </p>
+            <p id="shape-area">Area: </p>
+            <p id="shape-perimeter">Perimeter: </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
