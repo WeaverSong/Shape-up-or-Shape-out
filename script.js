@@ -181,7 +181,8 @@ document.getElementById('square-insert').addEventListener('click', function ()
 {
     let size = parseFloat(document.getElementById('square-length').value);
     document.getElementById('square-length').value = "";
-    new Square(size);
+
+    if (!isNaN(size)) new Square(size);
 });
 
 document.getElementById('rect-insert').addEventListener('click', function ()
@@ -190,19 +191,19 @@ document.getElementById('rect-insert').addEventListener('click', function ()
     let height = parseFloat(document.getElementById('rect-height').value);
     document.getElementById('rect-width').value = "";
     document.getElementById('rect-height').value = "";
-    new Rectangle(width, height);
+    if (!isNaN(width) && !isNaN(height)) new Rectangle(width, height);
 });
 
 document.getElementById('circle-insert').addEventListener('click', function ()
 {
     let radius = parseFloat(document.getElementById('circle-radius').value);
     document.getElementById('circle-radius').value = "";
-    new Circle(radius);
+    if (!isNaN(radius)) new Circle(radius);
 });
 
 document.getElementById('tri-insert').addEventListener('click', function ()
 {
     let height = parseFloat(document.getElementById('tri-height').value);
     document.getElementById('tri-height').value = "";
-    new Triangle(height);
+    if (!isNaN(height)) new Triangle(height);
 });
